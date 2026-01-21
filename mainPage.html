@@ -2,45 +2,97 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ana Sayfa</title>
-    <link rel="stylesheet" href="stil.css"> 
-    <link rel="icon" type="image/png" href="C:\Users\Ghost\Desktop\Web Uygulama ve Geliştirme\vize\letter-k (1).png">
+    <title>Ana Sayfa | Kutay Kubilay Kayhan</title>
+    <link rel="stylesheet" href="stil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .yetenek-paneli {
+            background: #ffffff;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            max-width: 1000px;
+            margin: 0 auto;
+            border: 1px solid #e0e6ed;
+        }
+        .yetenek-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 25px;
+            justify-items: center;
+        }
+        .yetenek-item {
+            text-align: center;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 12px;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .yetenek-item i, .yetenek-item span {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .yetenek-item p {
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin: 0;
+            color: #444;
+        }
+        .ayrac {
+            height: 2px;
+            background: linear-gradient(to right, transparent, #ddd, transparent);
+            margin: 40px 0;
+            opacity: 0.5;
+        }
+    </style>
 </head>
 <body>
-
-    <div class="ust-navigasyon">
-        <a href="mainPage.html" class="nav-buton">Ana Sayfa</a>
+    <nav class="ust-navigasyon">
+        <a href="mainPage.html" class="nav-buton aktif">Ana Sayfa</a>
         <a href="hakkimda.html" class="nav-buton">Hakkımda</a>
         <a href="ozgecmis.html" class="nav-buton">Özgeçmiş</a>
         <a href="projeler.html" class="nav-buton">Projeler</a>
         <a href="iletisim.html" class="nav-buton">İletişim</a>
-    </div>
-    
-    <main class="ana-icerik">
-        <section class="kahraman-alani">
-            <div class="kahraman-metin">
-                <h1>Kutay Kubilay Kayhan</h1>
-                <img src="C:\Users\Ghost\Desktop\Web Uygulama ve Geliştirme\vize\WhatsApp Görsel 2025-11-03 saat 12.49.07_13e75529.jpg" alt="Profil Fotoğrafı" class="profil-foto">
-                <p>
-                    Yazılım geliştirmeye ilgi duyan, öğrenmeye açık ve kendini sürekli geliştirmeye çalışan
-                    İstanbul Topkapı Üniversitesi’nde yazılım mühendisliği öğrencisiyim. Eğitim sürecimde hem
-                    teorik bilgileri hem de pratik uygulamaları deneyimleme fırsatım oldu.
-                    HTML, CSS, C++, C#, Java, PHP, Python ve SQL gibi dillerle projeler geliştirdim.
-                    AutoCAD ve Clomosy gibi yazılımlarla da çalıştım. Farklı yazılım şirketlerinde yaptığım
-                    stajlarla iş hayatını yakından tanıdım, takım çalışması ve gerçek projelerde yer alma deneyimi edindim.
-                    Şu an kendimi özellikle yapay zekâ, veri bilimi ve modern yazılım geliştirme yaklaşımları konusunda
-                    geliştirmeye odaklandım.
-                    Yeni şeyler öğrenmeye, projelerde aktif rol almaya ve gerçek dünyaya katkı sağlayacak yazılımlar üretmeye hevesliyim.
-                </p>
-                <a href="https://www.linkedin.com/in/kutay-kubilay-kayhan-893393340" class="ana-cta-buton" target="_blank">Linkedin Hesabım</a>
+    </nav>
+
+    <main style="text-align: center; background: transparent; box-shadow: none;">
+        <h1 id="ana-baslik" style="font-size: 2.8rem; margin-bottom: 5px;">Teknik Portfolyo</h1>
+        <p style="font-size: 1.2rem; color: #666; margin-bottom: 40px;">Yazılım Mühendisliği & Teknoloji Yetkinlikleri</p>
+
+        <div class="yetenek-paneli">
+            <div class="yetenek-grid">
+                <div class="yetenek-item" data-tech="Python"><i class="fab fa-python fa-2x" style="color: #3776AB;"></i><p>Python</p></div>
+                <div class="yetenek-item" data-tech="C++"><span style="font-size: 1.6rem; font-weight: bold; color: #00599C;">C++</span><p>C++</p></div>
+                <div class="yetenek-item" data-tech="C#"><span style="font-size: 1.6rem; font-weight: bold; color: #239120;">C#</span><p>C#</p></div>
+                <div class="yetenek-item" data-tech="Java"><i class="fab fa-java fa-2x" style="color: #007396;"></i><p>Java</p></div>
+                <div class="yetenek-item" data-tech="PHP"><i class="fab fa-php fa-2x" style="color: #777BB4;"></i><p>PHP</p></div>
+                <div class="yetenek-item" data-tech="HTML5"><i class="fab fa-html5 fa-2x" style="color: #E34F26;"></i><p>HTML5</p></div>
+                <div class="yetenek-item" data-tech="CSS3"><i class="fab fa-css3-alt fa-2x" style="color: #1572B6;"></i><p>CSS3</p></div>
+                <div class="yetenek-item" data-tech="SQL"><i class="fas fa-database fa-2x" style="color: #CC2927;"></i><p>SQL</p></div>
             </div>
-        </section>
+
+            <div class="ayrac"></div>
+
+            <div class="yetenek-grid">
+                <div class="yetenek-item" data-tech="Power BI"><i class="fas fa-chart-bar fa-2x" style="color: #F2C811;"></i><p>Power BI</p></div>
+                <div class="yetenek-item" data-tech="AutoCAD"><i class="fas fa-drafting-compass fa-2x" style="color: #DA291C;"></i><p>AutoCAD</p></div>
+                <div class="yetenek-item" data-tech="SSMS"><i class="fas fa-server fa-2x" style="color: #333333;"></i><p>SSMS</p></div>
+                <div class="yetenek-item" data-tech="Anaconda"><i class="fas fa-leaf fa-2x" style="color: #4ead29;"></i><p>Anaconda</p></div>
+                <div class="yetenek-item" data-tech="DevExpress"><i class="fas fa-layer-group fa-2x" style="color: #FF7200;"></i><p>DevExpress</p></div>
+            </div>
+        </div>
+
+        <div style="margin-top: 50px;">
+            <a href="projeler.html" class="ana-cta-buton" style="margin-top: 0;">Çalışmalarımı İncele</a>
+            <a href="iletisim.html" class="ana-cta-buton" style="margin-top: 0; background-color: #333; margin-left: 15px;">İletişim</a>
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2025 Kutay Kubilay Kayhan - Bütün Telif Hakları Saklıdır</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
+<script src="script.js"></script>
 </html>
